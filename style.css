@@ -131,12 +131,13 @@ section {
 
 .main h2 span {
   color: #28809A;
+  font-size: 25px;
 }
 
 .main h3 {
   color: #444;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .main-btn {
