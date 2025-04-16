@@ -1,140 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>رخص البرمجيات</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style-mobile.css" media="only screen and (max-width: 768px)" />
-</head>
-<body>
-  <section class="hero-section" data-aos="fade-left">
-    <h1>مرحباً بك في عالم الإبداع 🌟</h1>
-    <p>اصنع تجربة مميزة، كل فكرة عظيمة تستحق رخصة...وكل رخصة تبدأ من لُجّة!</p>
-    <a href="#home" class="main-btn">ابدأ الآن</a>
-  </section>
-  
-  <div class="divider"></div>
-
-  <!-- خلفية متحركة -->
-  <div class="animated-background">
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-  </div>
-
-  <!-- الهيدر -->
-  <header>
-    <a href="#" class="logo">لُجّة</a>
-    <nav class="navigation" data-aos="fade-left">
-      <a href="#home">الصفحة الرئيسية</a>
-      <a href="#Types">أنواع رخص البرمجيات</a>
-      <a href="#fossa">FOSSA</a> 
-      <a href="#check">التحقق من الترخيص</a>
-    </nav>
-  </header>
-
-  <!-- المقدمة -->
-  <section class="main">
-    <div class="white-box"  id="home" data-aos="fade-up">
-      <blockquote>
-        <h2 class="section-title">رخصة البرمجيات</h2>
-        <div class="intro-content">
-          <h3>
-            هي وثيقة قانونية تحدد كيفية استخدام البرمجيات، توزيعها، وتعديلها... تحدد اتفاقية ترخيص البرمجيات الشروط التي يمكنك بموجبها الوصول إلى البرنامج ونسخه وتغييره ومشاركته.
-          </h3>
-          <a href="#Types" class="main-btn">أنتقل إلى أنواع رخص البرمجيات</a>
-        </div>
-      </blockquote>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-  <!-- أنواع الرخص -->
-  <section class="Types" id="Types" data-aos="fade-up">
-    <h2 class="section-title">أنواع رخص البرمجيات</h2>
-    <div class="card-grid">
-      <div class="card">
-        <div class="card-background"></div>
-        <div class="card-category">
-          <h3>رخصة مفتوحة المصدر</h3>
-          <p>تسمح باستخدام كود المصدر أو المخطط أو التصميم، والتعديل عليهم، و/أو مشاركتهم وفقًا لشروط وأحكام معيّنة.</p>
-          <a href="open-source.html" class="main-btn">عرض التفاصيل</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-background"></div>
-        <div class="card-category">
-          <h3>رخص تجارية</h3>
-          <p>تراخيص مقيدة غالباً، تتطلب شراء، وتحد من تعديل أو مشاركة البرامج.</p>
-          <a href="commercial.html" class="main-btn">عرض التفاصيل</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-background"></div>
-        <div class="card-category">
-          <h3>رخص أخرى</h3>
-          <p>رخص لا تندرج تحت التصنيفات التقليدية، وتشمل النطاق العام والبيانات المفتوحة.</p>
-          <a href="other.html" class="main-btn">عرض التفاصيل</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- fossa -->
-  <section class="fossa-section" id="fossa" data-aos="fade-left">
-    <h2 class="section-title">ما هي FOSSA؟</h2>
-    <p>FOSSA هي أداة ذكية تساعد الفرق البرمجية على تحليل تراخيص المصادر المفتوحة والتأكد من الامتثال القانوني.</p>
-    <p>تتيح تتبع التراخيص، والكشف عن المشاكل، وتوليد تقارير مفصلة.</p>
-    <a href="https://fossa.com/" target="_blank" class="main-btn">اكتشف FOSSA الآن</a>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- التحقق -->
-  <section id="check">
-    <div class="check-section" data-aos="fade-up">
-      <h1>تحقق من رقم الترخيص</h1>
-      <input type="text" id="licenseInput" placeholder="أدخل رقم الترخيص للتحقق">
-      <button class="main-btn" onclick="checkLicense()">تحقق الآن</button>
-      <div class="result-message" id="result"></div>
-    </div>
-  </section>
-
-  <!-- AOS + التحقق -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: true,
-      offset: 100,
-    });
-
-    function checkLicense() {
-      const input = document.getElementById("licenseInput").value.trim();
-      const result = document.getElementById("result");
-
-      const validLicenses = ["12345", "ABCDE", "LAMA2025", "OPEN456"];
-
-      if (validLicenses.includes(input)) {
-        result.textContent = "✅ الترخيص صحيح ومفعل!";
-        result.className = "result-message valid";
-      } else {
-        result.textContent = "❌ رقم الترخيص غير موجود أو غير صحيح.";
-        result.className = "result-message invalid";
-      }
-
-      result.style.display = "block";
-    }
-  </script>
-</body>
-</html>
