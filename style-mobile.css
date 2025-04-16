@@ -1,0 +1,92 @@
+/* style-mobile.css */
+@media (max-width: 768px) {
+    body {
+      padding-top: 80px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px 20px;
+    }
+  
+    .navigation {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+    }
+  
+    .navigation a {
+      padding: 10px 0;
+      font-size: 1em;
+    }
+  
+    .hero-section {
+      padding: 60px 15px;
+      text-align: center;
+    }
+  
+    .hero-section h1 {
+      font-size: 1.6em;
+    }
+  
+    .hero-section p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+  
+    .main-btn {
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+    }
+  
+    .white-box,
+    .check-section,
+    .fossa-section {
+      padding: 25px;
+      margin: 20px 10px;
+    }
+  
+    .section-title {
+      font-size: 1.6em;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .main h3 {
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+  
+    .card-grid {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 10px;
+    }
+  
+    .card {
+      width: 100%;
+      max-width: 95%;
+      margin-bottom: 25px;
+    }
+  
+    input[type="text"] {
+      font-size: 1em;
+      padding: 12px;
+    }
+  
+    .result-message {
+      font-size: 1em;
+    }
+  
+    .divider {
+      margin: 30px auto;
+      width: 90%;
+    }
+  
+    .animated-background {
+      display: none; /* نخفي الخلفية المتحركة بالجوال عشان الأداء */
+    }
+  }
+  
