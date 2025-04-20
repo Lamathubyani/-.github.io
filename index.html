@@ -126,25 +126,6 @@
       offset: 100,
     });
 
-    function checkLicense() {
-      const input = document.getElementById("licenseInput").value.trim();
-      const result = document.getElementById("result");
-
-      const validLicenses = ["12345", "ABCDE", "LAMA2025", "OPEN456"];
-
-      if (validLicenses.includes(input)) {
-        result.textContent = "✅ الترخيص صحيح ومفعل!";
-        result.className = "result-message valid";
-      } else {
-        result.textContent = "❌ رقم الترخيص غير موجود أو غير صحيح.";
-        result.className = "result-message invalid";
-      }
-
-      result.style.display = "block";
-    }
-   
-
-
 function toggleMenu() {
   document.querySelector(".navigation").classList.toggle("open");
 }
