@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  font-family: 'Arial', sans-serif;
   direction: rtl;
   padding-top: 100px; /* عشان الهيدر ما يغطي المحتوى */
   font-family: 'Cairo', sans-serif;   
